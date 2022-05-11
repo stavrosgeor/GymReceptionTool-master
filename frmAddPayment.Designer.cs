@@ -50,13 +50,14 @@ namespace GymReceptionTool
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(18, 159);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 13);
+            this.label1.Size = new System.Drawing.Size(86, 15);
             this.label1.TabIndex = 47;
             this.label1.Text = "Amount Payed";
             // 
             // txtAmount
             // 
             this.txtAmount.Location = new System.Drawing.Point(99, 153);
+            this.txtAmount.MaxLength = 20;
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.Size = new System.Drawing.Size(100, 20);
             this.txtAmount.TabIndex = 48;
@@ -64,6 +65,7 @@ namespace GymReceptionTool
             // txtNote
             // 
             this.txtNote.Location = new System.Drawing.Point(99, 187);
+            this.txtNote.MaxLength = 20;
             this.txtNote.Name = "txtNote";
             this.txtNote.Size = new System.Drawing.Size(205, 20);
             this.txtNote.TabIndex = 50;
@@ -73,7 +75,7 @@ namespace GymReceptionTool
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(18, 192);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 13);
+            this.label2.Size = new System.Drawing.Size(33, 15);
             this.label2.TabIndex = 49;
             this.label2.Text = "Note";
             // 
@@ -127,7 +129,7 @@ namespace GymReceptionTool
             this.rdbTel.AutoSize = true;
             this.rdbTel.Location = new System.Drawing.Point(15, 52);
             this.rdbTel.Name = "rdbTel";
-            this.rdbTel.Size = new System.Drawing.Size(57, 17);
+            this.rdbTel.Size = new System.Drawing.Size(64, 19);
             this.rdbTel.TabIndex = 59;
             this.rdbTel.TabStop = true;
             this.rdbTel.Text = "Tel.No";
@@ -139,7 +141,7 @@ namespace GymReceptionTool
             this.rdbID.AutoSize = true;
             this.rdbID.Location = new System.Drawing.Point(15, 24);
             this.rdbID.Name = "rdbID";
-            this.rdbID.Size = new System.Drawing.Size(36, 17);
+            this.rdbID.Size = new System.Drawing.Size(40, 19);
             this.rdbID.TabIndex = 58;
             this.rdbID.TabStop = true;
             this.rdbID.Text = "ID";
@@ -150,6 +152,7 @@ namespace GymReceptionTool
             // 
             this.txtSearchbyTel.Enabled = false;
             this.txtSearchbyTel.Location = new System.Drawing.Point(78, 48);
+            this.txtSearchbyTel.MaxLength = 20;
             this.txtSearchbyTel.Name = "txtSearchbyTel";
             this.txtSearchbyTel.Size = new System.Drawing.Size(100, 20);
             this.txtSearchbyTel.TabIndex = 57;
@@ -167,6 +170,7 @@ namespace GymReceptionTool
             // 
             this.txtSearchbyID.Enabled = false;
             this.txtSearchbyID.Location = new System.Drawing.Point(78, 19);
+            this.txtSearchbyID.MaxLength = 20;
             this.txtSearchbyID.Name = "txtSearchbyID";
             this.txtSearchbyID.Size = new System.Drawing.Size(100, 20);
             this.txtSearchbyID.TabIndex = 55;
@@ -185,6 +189,7 @@ namespace GymReceptionTool
             this.Controls.Add(this.label1);
             this.Name = "frmAddPayment";
             this.Text = "Add Payment to Member";
+            this.Load += new System.EventHandler(this.frmAddPayment_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

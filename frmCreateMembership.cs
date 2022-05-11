@@ -39,5 +39,10 @@ namespace GymReceptionTool
 
             this.Hide();
         }
+
+        private void frmCreateMembership_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

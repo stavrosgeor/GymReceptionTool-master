@@ -82,7 +82,7 @@ namespace GymReceptionTool
             this.rdbTel.AutoSize = true;
             this.rdbTel.Location = new System.Drawing.Point(15, 52);
             this.rdbTel.Name = "rdbTel";
-            this.rdbTel.Size = new System.Drawing.Size(57, 17);
+            this.rdbTel.Size = new System.Drawing.Size(64, 19);
             this.rdbTel.TabIndex = 59;
             this.rdbTel.TabStop = true;
             this.rdbTel.Text = "Tel.No";
@@ -94,7 +94,7 @@ namespace GymReceptionTool
             this.rdbID.AutoSize = true;
             this.rdbID.Location = new System.Drawing.Point(15, 24);
             this.rdbID.Name = "rdbID";
-            this.rdbID.Size = new System.Drawing.Size(36, 17);
+            this.rdbID.Size = new System.Drawing.Size(40, 19);
             this.rdbID.TabIndex = 58;
             this.rdbID.TabStop = true;
             this.rdbID.Text = "ID";
@@ -105,6 +105,7 @@ namespace GymReceptionTool
             // 
             this.txtSearchbyTel.Enabled = false;
             this.txtSearchbyTel.Location = new System.Drawing.Point(78, 48);
+            this.txtSearchbyTel.MaxLength = 20;
             this.txtSearchbyTel.Name = "txtSearchbyTel";
             this.txtSearchbyTel.Size = new System.Drawing.Size(100, 20);
             this.txtSearchbyTel.TabIndex = 57;
@@ -123,6 +124,7 @@ namespace GymReceptionTool
             // 
             this.txtSearchbyID.Enabled = false;
             this.txtSearchbyID.Location = new System.Drawing.Point(78, 19);
+            this.txtSearchbyID.MaxLength = 20;
             this.txtSearchbyID.Name = "txtSearchbyID";
             this.txtSearchbyID.Size = new System.Drawing.Size(100, 20);
             this.txtSearchbyID.TabIndex = 55;

@@ -44,6 +44,7 @@ namespace GymReceptionTool
             this.label6 = new System.Windows.Forms.Label();
             this.txtSurname = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnEdit = new System.Windows.Forms.Button();
             this.txtemail = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtAddress = new System.Windows.Forms.TextBox();
@@ -53,7 +54,6 @@ namespace GymReceptionTool
             this.txtName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.btnEdit = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -86,6 +86,7 @@ namespace GymReceptionTool
             // 
             this.txtSearchbyTel.Enabled = false;
             this.txtSearchbyTel.Location = new System.Drawing.Point(92, 41);
+            this.txtSearchbyTel.MaxLength = 20;
             this.txtSearchbyTel.Name = "txtSearchbyTel";
             this.txtSearchbyTel.Size = new System.Drawing.Size(100, 20);
             this.txtSearchbyTel.TabIndex = 45;
@@ -103,6 +104,7 @@ namespace GymReceptionTool
             // 
             this.txtSearchbyID.Enabled = false;
             this.txtSearchbyID.Location = new System.Drawing.Point(92, 12);
+            this.txtSearchbyID.MaxLength = 20;
             this.txtSearchbyID.Name = "txtSearchbyID";
             this.txtSearchbyID.Size = new System.Drawing.Size(100, 20);
             this.txtSearchbyID.TabIndex = 43;
@@ -188,6 +190,7 @@ namespace GymReceptionTool
             // txtAge
             // 
             this.txtAge.Location = new System.Drawing.Point(142, 101);
+            this.txtAge.MaxLength = 20;
             this.txtAge.Name = "txtAge";
             this.txtAge.Size = new System.Drawing.Size(267, 20);
             this.txtAge.TabIndex = 57;
@@ -204,6 +207,7 @@ namespace GymReceptionTool
             // txtSurname
             // 
             this.txtSurname.Location = new System.Drawing.Point(142, 67);
+            this.txtSurname.MaxLength = 20;
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(267, 20);
             this.txtSurname.TabIndex = 55;
@@ -217,9 +221,20 @@ namespace GymReceptionTool
             this.label7.TabIndex = 54;
             this.label7.Text = "Surname";
             // 
+            // btnEdit
+            // 
+            this.btnEdit.Location = new System.Drawing.Point(110, 389);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(98, 23);
+            this.btnEdit.TabIndex = 38;
+            this.btnEdit.Text = "Edit Member";
+            this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
             // txtemail
             // 
             this.txtemail.Location = new System.Drawing.Point(142, 246);
+            this.txtemail.MaxLength = 20;
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(267, 20);
             this.txtemail.TabIndex = 53;
@@ -229,13 +244,14 @@ namespace GymReceptionTool
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(45, 250);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 13);
+            this.label5.Size = new System.Drawing.Size(32, 13);
             this.label5.TabIndex = 52;
-            this.label5.Text = "email";
+            this.label5.Text = "Email";
             // 
             // txtAddress
             // 
             this.txtAddress.Location = new System.Drawing.Point(142, 211);
+            this.txtAddress.MaxLength = 20;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(267, 20);
             this.txtAddress.TabIndex = 51;
@@ -252,6 +268,7 @@ namespace GymReceptionTool
             // txtTelNo
             // 
             this.txtTelNo.Location = new System.Drawing.Point(142, 176);
+            this.txtTelNo.MaxLength = 20;
             this.txtTelNo.Name = "txtTelNo";
             this.txtTelNo.Size = new System.Drawing.Size(267, 20);
             this.txtTelNo.TabIndex = 49;
@@ -268,6 +285,7 @@ namespace GymReceptionTool
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(142, 34);
+            this.txtName.MaxLength = 20;
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(267, 20);
             this.txtName.TabIndex = 47;
@@ -290,16 +308,6 @@ namespace GymReceptionTool
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.Location = new System.Drawing.Point(110, 389);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(98, 23);
-            this.btnEdit.TabIndex = 38;
-            this.btnEdit.Text = "Edit Member";
-            this.btnEdit.UseVisualStyleBackColor = true;
-            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnSearch
             // 

@@ -42,8 +42,10 @@ namespace GymReceptionTool
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+
             if (true)
             {
+
                 DataAccess db = new DataAccess();
                 Member member = new Member();
                 
@@ -80,6 +82,9 @@ namespace GymReceptionTool
             this.Hide();
         }
 
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }

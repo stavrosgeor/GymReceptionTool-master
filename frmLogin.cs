@@ -36,7 +36,7 @@ namespace GymReceptionTool
 
         private void txtUsername_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
-
+            txtUsername.MaxLength = 20;
         }
 
         private void frmLogin_Load(object sender, EventArgs e)
@@ -81,5 +81,11 @@ namespace GymReceptionTool
             myNewForm.Visible = true;
             this.Hide();
         }
+        public bool IsNumeric (string value)
+        {
+            return value.All(char.IsNumber);
+        }
     }
+
+
 }

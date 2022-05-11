@@ -50,20 +50,23 @@ namespace GymReceptionTool
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(51, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 13);
+            this.label1.Size = new System.Drawing.Size(64, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Full Name";
             // 
             // txtFullName
             // 
             this.txtFullName.Location = new System.Drawing.Point(149, 12);
+            this.txtFullName.MaxLength = 20;
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(267, 20);
             this.txtFullName.TabIndex = 1;
+            this.txtFullName.TextChanged += new System.EventHandler(this.txtFullName_TextChanged);
             // 
             // txtTelNo
             // 
             this.txtTelNo.Location = new System.Drawing.Point(149, 49);
+            this.txtTelNo.MaxLength = 20;
             this.txtTelNo.Name = "txtTelNo";
             this.txtTelNo.Size = new System.Drawing.Size(267, 20);
             this.txtTelNo.TabIndex = 3;
@@ -73,13 +76,14 @@ namespace GymReceptionTool
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(51, 53);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 13);
+            this.label2.Size = new System.Drawing.Size(96, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "Telephone Num";
             // 
             // txtAddress
             // 
             this.txtAddress.Location = new System.Drawing.Point(149, 84);
+            this.txtAddress.MaxLength = 20;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(267, 20);
             this.txtAddress.TabIndex = 5;
@@ -89,13 +93,14 @@ namespace GymReceptionTool
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(51, 88);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 13);
+            this.label3.Size = new System.Drawing.Size(51, 15);
             this.label3.TabIndex = 4;
             this.label3.Text = "Address";
             // 
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(149, 154);
+            this.txtPassword.MaxLength = 20;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(267, 20);
             this.txtPassword.TabIndex = 9;
@@ -105,13 +110,14 @@ namespace GymReceptionTool
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(51, 158);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 13);
+            this.label4.Size = new System.Drawing.Size(61, 15);
             this.label4.TabIndex = 8;
             this.label4.Text = "Password";
             // 
             // txtUsername
             // 
             this.txtUsername.Location = new System.Drawing.Point(149, 119);
+            this.txtUsername.MaxLength = 20;
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(267, 20);
             this.txtUsername.TabIndex = 7;
@@ -121,13 +127,14 @@ namespace GymReceptionTool
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(51, 123);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 13);
+            this.label5.Size = new System.Drawing.Size(65, 15);
             this.label5.TabIndex = 6;
             this.label5.Text = "Username";
             // 
             // txtConfirmPass
             // 
             this.txtConfirmPass.Location = new System.Drawing.Point(149, 190);
+            this.txtConfirmPass.MaxLength = 20;
             this.txtConfirmPass.Name = "txtConfirmPass";
             this.txtConfirmPass.Size = new System.Drawing.Size(267, 20);
             this.txtConfirmPass.TabIndex = 11;
@@ -137,7 +144,7 @@ namespace GymReceptionTool
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(51, 194);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 13);
+            this.label6.Size = new System.Drawing.Size(107, 15);
             this.label6.TabIndex = 10;
             this.label6.Text = "Confirm Password";
             // 

@@ -92,5 +92,10 @@ namespace GymReceptionTool
 
             this.Hide();
         }
+
+        private void frmAddPayment_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

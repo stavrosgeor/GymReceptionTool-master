@@ -127,6 +127,7 @@ namespace GymReceptionTool
             // txtConfirmPass
             // 
             this.txtConfirmPass.Location = new System.Drawing.Point(136, 214);
+            this.txtConfirmPass.MaxLength = 20;
             this.txtConfirmPass.Name = "txtConfirmPass";
             this.txtConfirmPass.Size = new System.Drawing.Size(267, 20);
             this.txtConfirmPass.TabIndex = 39;
@@ -143,6 +144,7 @@ namespace GymReceptionTool
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(136, 178);
+            this.txtPassword.MaxLength = 20;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(267, 20);
             this.txtPassword.TabIndex = 37;
@@ -159,6 +161,7 @@ namespace GymReceptionTool
             // txtUsername
             // 
             this.txtUsername.Location = new System.Drawing.Point(136, 143);
+            this.txtUsername.MaxLength = 20;
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(267, 20);
             this.txtUsername.TabIndex = 35;
@@ -175,6 +178,7 @@ namespace GymReceptionTool
             // txtAddress
             // 
             this.txtAddress.Location = new System.Drawing.Point(136, 108);
+            this.txtAddress.MaxLength = 20;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(267, 20);
             this.txtAddress.TabIndex = 33;
@@ -191,6 +195,7 @@ namespace GymReceptionTool
             // txtTelNo
             // 
             this.txtTelNo.Location = new System.Drawing.Point(136, 73);
+            this.txtTelNo.MaxLength = 20;
             this.txtTelNo.Name = "txtTelNo";
             this.txtTelNo.Size = new System.Drawing.Size(267, 20);
             this.txtTelNo.TabIndex = 31;
@@ -207,6 +212,7 @@ namespace GymReceptionTool
             // txtFullName
             // 
             this.txtFullName.Location = new System.Drawing.Point(136, 36);
+            this.txtFullName.MaxLength = 20;
             this.txtFullName.Name = "txtFullName";
             this.txtFullName.Size = new System.Drawing.Size(267, 20);
             this.txtFullName.TabIndex = 29;
@@ -224,6 +230,7 @@ namespace GymReceptionTool
             // 
             this.txtSID.Enabled = false;
             this.txtSID.Location = new System.Drawing.Point(117, 12);
+            this.txtSID.MaxLength = 20;
             this.txtSID.Name = "txtSID";
             this.txtSID.Size = new System.Drawing.Size(100, 20);
             this.txtSID.TabIndex = 30;
@@ -241,6 +248,7 @@ namespace GymReceptionTool
             // 
             this.txtSPhone.Enabled = false;
             this.txtSPhone.Location = new System.Drawing.Point(117, 41);
+            this.txtSPhone.MaxLength = 20;
             this.txtSPhone.Name = "txtSPhone";
             this.txtSPhone.Size = new System.Drawing.Size(100, 20);
             this.txtSPhone.TabIndex = 33;
