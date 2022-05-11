@@ -56,6 +56,12 @@ namespace GymReceptionTool
         {
             if (rdbID.Checked)
             {
+                if (!IsNumeric(txtTelNo.Text))
+
+                {
+                    MessageBox.Show("Invalid value in Telephone Number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtTelNo.Select();
+                }
 
                 List<Member> Members = new List<Member>();
                 DataAccess db = new DataAccess();
@@ -105,6 +111,10 @@ namespace GymReceptionTool
                 txtSearchbyID.Enabled = false;
                 txtSearchbyTel.Enabled = true;
             }
+        }
+        public bool IsNumeric(string value)
+        {
+            return value.All(char.IsNumber);
         }
     }
 }

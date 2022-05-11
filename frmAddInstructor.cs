@@ -59,5 +59,10 @@ namespace GymReceptionTool
         {
             return value.All(char.IsNumber);
         }
+
+        private void frmAddInstructor_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

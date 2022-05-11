@@ -50,7 +50,7 @@ namespace GymReceptionTool
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(18, 159);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 15);
+            this.label1.Size = new System.Drawing.Size(76, 13);
             this.label1.TabIndex = 47;
             this.label1.Text = "Amount Payed";
             // 
@@ -61,6 +61,7 @@ namespace GymReceptionTool
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.Size = new System.Drawing.Size(100, 20);
             this.txtAmount.TabIndex = 48;
+            this.txtAmount.TextChanged += new System.EventHandler(this.txtAmount_TextChanged);
             // 
             // txtNote
             // 
@@ -75,7 +76,7 @@ namespace GymReceptionTool
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(18, 192);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 15);
+            this.label2.Size = new System.Drawing.Size(30, 13);
             this.label2.TabIndex = 49;
             this.label2.Text = "Note";
             // 
@@ -129,7 +130,7 @@ namespace GymReceptionTool
             this.rdbTel.AutoSize = true;
             this.rdbTel.Location = new System.Drawing.Point(15, 52);
             this.rdbTel.Name = "rdbTel";
-            this.rdbTel.Size = new System.Drawing.Size(64, 19);
+            this.rdbTel.Size = new System.Drawing.Size(57, 17);
             this.rdbTel.TabIndex = 59;
             this.rdbTel.TabStop = true;
             this.rdbTel.Text = "Tel.No";
@@ -141,7 +142,7 @@ namespace GymReceptionTool
             this.rdbID.AutoSize = true;
             this.rdbID.Location = new System.Drawing.Point(15, 24);
             this.rdbID.Name = "rdbID";
-            this.rdbID.Size = new System.Drawing.Size(40, 19);
+            this.rdbID.Size = new System.Drawing.Size(36, 17);
             this.rdbID.TabIndex = 58;
             this.rdbID.TabStop = true;
             this.rdbID.Text = "ID";

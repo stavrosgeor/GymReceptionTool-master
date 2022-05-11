@@ -45,6 +45,12 @@ namespace GymReceptionTool
 
             if (true)
             {
+                if (!IsNumeric(txtTelNo.Text))
+
+                {
+                    MessageBox.Show("Invalid value in Telephone Number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtTelNo.Select();
+                }
 
                 DataAccess db = new DataAccess();
                 Member member = new Member();
@@ -85,6 +91,16 @@ namespace GymReceptionTool
         private void txtName_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtTelNo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        public bool IsNumeric(string value)
+        {
+            return value.All(char.IsNumber);
         }
     }
 }

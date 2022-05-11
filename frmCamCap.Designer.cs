@@ -52,7 +52,7 @@ namespace GymReceptionTool
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(58, 174);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 15);
+            this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Camera";
             // 
@@ -61,7 +61,7 @@ namespace GymReceptionTool
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(51, 206);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 15);
+            this.label2.Size = new System.Drawing.Size(50, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Webcam";
             // 
@@ -70,7 +70,7 @@ namespace GymReceptionTool
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(574, 206);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(126, 15);
+            this.label3.Size = new System.Drawing.Size(109, 13);
             this.label3.TabIndex = 7;
             this.label3.Text = "Image Capture Result";
             // 
@@ -137,7 +137,7 @@ namespace GymReceptionTool
             this.rdbTel.AutoSize = true;
             this.rdbTel.Location = new System.Drawing.Point(246, 59);
             this.rdbTel.Name = "rdbTel";
-            this.rdbTel.Size = new System.Drawing.Size(64, 19);
+            this.rdbTel.Size = new System.Drawing.Size(57, 17);
             this.rdbTel.TabIndex = 53;
             this.rdbTel.TabStop = true;
             this.rdbTel.Text = "Tel.No";
@@ -149,7 +149,7 @@ namespace GymReceptionTool
             this.rdbID.AutoSize = true;
             this.rdbID.Location = new System.Drawing.Point(246, 31);
             this.rdbID.Name = "rdbID";
-            this.rdbID.Size = new System.Drawing.Size(40, 19);
+            this.rdbID.Size = new System.Drawing.Size(36, 17);
             this.rdbID.TabIndex = 52;
             this.rdbID.TabStop = true;
             this.rdbID.Text = "ID";
@@ -164,6 +164,7 @@ namespace GymReceptionTool
             this.txtSearchbyTel.Name = "txtSearchbyTel";
             this.txtSearchbyTel.Size = new System.Drawing.Size(100, 20);
             this.txtSearchbyTel.TabIndex = 51;
+            this.txtSearchbyTel.TextChanged += new System.EventHandler(this.txtSearchbyTel_TextChanged);
             // 
             // listBox1
             // 

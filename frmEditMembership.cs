@@ -29,8 +29,6 @@ namespace GymReceptionTool
             lbcontents = ms;
             listBox1.DataSource = ms;
             listBox1.DisplayMember = "FullInfo";
-
-
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -54,6 +52,20 @@ namespace GymReceptionTool
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            if (!IsNumeric(txtAmount.Text))
+
+            {
+                MessageBox.Show("Invalid value in Amount", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtAmount.Select();
+            }
+
+            if (!IsNumeric(txtDuration.Text))
+
+            {
+                MessageBox.Show("Invalid value in Membership Duration", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtDuration.Select();
+            }
+
             DataAccess db = new DataAccess();
             Membership ms = new Membership();
             ms.Name = txtName.Text;
@@ -87,6 +99,15 @@ namespace GymReceptionTool
 
             this.Hide();
         }
-    }
+
+        private void txtDuration_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        public bool IsNumeric(string value)
+        {
+            return value.All(char.IsNumber);
+        }
     }
 
+}

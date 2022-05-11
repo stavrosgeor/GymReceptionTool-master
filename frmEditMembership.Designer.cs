@@ -147,6 +147,7 @@ namespace GymReceptionTool
             this.txtDuration.Name = "txtDuration";
             this.txtDuration.Size = new System.Drawing.Size(201, 20);
             this.txtDuration.TabIndex = 45;
+            this.txtDuration.TextChanged += new System.EventHandler(this.txtDuration_TextChanged);
             // 
             // label3
             // 

@@ -26,7 +26,7 @@ namespace GymReceptionTool
         {
             if (rdbID.Checked)
             {
-
+                
                 List<Member> Members = new List<Member>();
                 DataAccess db = new DataAccess();
                 Members = db.GetMemberbyID(txtSearchbyID.Text);
@@ -118,5 +118,6 @@ namespace GymReceptionTool
 
             this.Hide();
         }
+      
     }
 }

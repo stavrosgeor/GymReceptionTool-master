@@ -75,7 +75,7 @@ namespace GymReceptionTool
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(75, 174);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(38, 15);
+            this.label5.Size = new System.Drawing.Size(31, 13);
             this.label5.TabIndex = 20;
             this.label5.Text = "email";
             // 
@@ -91,7 +91,7 @@ namespace GymReceptionTool
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(75, 139);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(51, 15);
+            this.label3.Size = new System.Drawing.Size(45, 13);
             this.label3.TabIndex = 18;
             this.label3.Text = "Address";
             // 
@@ -108,7 +108,7 @@ namespace GymReceptionTool
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(75, 104);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 15);
+            this.label2.Size = new System.Drawing.Size(83, 13);
             this.label2.TabIndex = 16;
             this.label2.Text = "Telephone Num";
             // 
@@ -124,7 +124,7 @@ namespace GymReceptionTool
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(75, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 15);
+            this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 14;
             this.label1.Text = "Name";
             // 
@@ -140,7 +140,7 @@ namespace GymReceptionTool
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(75, 69);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(58, 15);
+            this.label7.Size = new System.Drawing.Size(49, 13);
             this.label7.TabIndex = 28;
             this.label7.Text = "Surname";
             // 
@@ -163,6 +163,7 @@ namespace GymReceptionTool
             this.Controls.Add(this.label1);
             this.Name = "frmAddInstructor";
             this.Text = "Add Inscructor";
+            this.Load += new System.EventHandler(this.frmAddInstructor_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

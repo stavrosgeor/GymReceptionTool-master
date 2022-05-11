@@ -60,6 +60,13 @@ namespace GymReceptionTool
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
+            if (!IsNumeric(txtTelNo.Text))
+
+            {
+                MessageBox.Show("Invalid value in Telephone Number", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtTelNo.Select();
+            }
+
             DataAccess db = new DataAccess();
             Member member = new Member();
             member.Name = txtName.Text;
@@ -183,5 +190,9 @@ namespace GymReceptionTool
         {
 
         }
+
+        public bool IsNumeric(string value)
+        {
+            return value.All(char.IsNumber);
+        }
     }
-}

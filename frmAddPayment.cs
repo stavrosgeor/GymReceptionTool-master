@@ -23,6 +23,13 @@ namespace GymReceptionTool
         {
             if (true)
             {
+                if (!IsNumeric(txtAmount.Text))
+
+                {
+                    MessageBox.Show("Invalid value in Amount", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtAmount.Select();
+                }
+
                 DataAccess db = new DataAccess();
                 Payment pay = new Payment();
                 pay.Amount = int.Parse(txtAmount.Text);
@@ -96,6 +103,16 @@ namespace GymReceptionTool
         private void frmAddPayment_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtAmount_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        public bool IsNumeric(string value)
+        {
+            return value.All(char.IsNumber);
         }
     }
 }

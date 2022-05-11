@@ -158,6 +158,7 @@ namespace GymReceptionTool
             this.txtTelNo.Name = "txtTelNo";
             this.txtTelNo.Size = new System.Drawing.Size(267, 20);
             this.txtTelNo.TabIndex = 33;
+            this.txtTelNo.TextChanged += new System.EventHandler(this.txtTelNo_TextChanged);
             // 
             // label2
             // 

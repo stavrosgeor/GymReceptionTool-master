@@ -45,13 +45,14 @@ namespace GymReceptionTool
             this.txtAmount.Name = "txtAmount";
             this.txtAmount.Size = new System.Drawing.Size(267, 20);
             this.txtAmount.TabIndex = 41;
+            this.txtAmount.TextChanged += new System.EventHandler(this.txtAmount_TextChanged);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(29, 63);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(49, 15);
+            this.label7.Size = new System.Drawing.Size(43, 13);
             this.label7.TabIndex = 40;
             this.label7.Text = "Amount";
             // 
@@ -87,7 +88,7 @@ namespace GymReceptionTool
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(29, 95);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(179, 15);
+            this.label3.Size = new System.Drawing.Size(151, 13);
             this.label3.TabIndex = 34;
             this.label3.Text = "Membership Duration (Months)";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -104,7 +105,7 @@ namespace GymReceptionTool
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(29, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 15);
+            this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 30;
             this.label1.Text = "Name";
             // 

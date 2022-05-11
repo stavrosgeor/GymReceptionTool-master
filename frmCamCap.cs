@@ -290,5 +290,10 @@ namespace GymReceptionTool
             catch (Exception Ex) { };
             this.Hide();
             }
+
+        private void txtSearchbyTel_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
