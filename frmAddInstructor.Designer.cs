@@ -66,6 +66,7 @@ namespace GymReceptionTool
             // txtemail
             // 
             this.txtemail.Location = new System.Drawing.Point(173, 170);
+            this.txtemail.MaxLength = 20;
             this.txtemail.Name = "txtemail";
             this.txtemail.Size = new System.Drawing.Size(267, 20);
             this.txtemail.TabIndex = 21;
@@ -75,13 +76,14 @@ namespace GymReceptionTool
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(75, 174);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 13);
+            this.label5.Size = new System.Drawing.Size(32, 13);
             this.label5.TabIndex = 20;
-            this.label5.Text = "email";
+            this.label5.Text = "Email";
             // 
             // txtAddress
             // 
             this.txtAddress.Location = new System.Drawing.Point(173, 135);
+            this.txtAddress.MaxLength = 20;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(267, 20);
             this.txtAddress.TabIndex = 19;
@@ -98,6 +100,7 @@ namespace GymReceptionTool
             // txtTelNo
             // 
             this.txtTelNo.Location = new System.Drawing.Point(173, 100);
+            this.txtTelNo.MaxLength = 20;
             this.txtTelNo.Name = "txtTelNo";
             this.txtTelNo.Size = new System.Drawing.Size(267, 20);
             this.txtTelNo.TabIndex = 17;
@@ -115,6 +118,7 @@ namespace GymReceptionTool
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(173, 32);
+            this.txtName.MaxLength = 20;
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(267, 20);
             this.txtName.TabIndex = 15;
@@ -131,6 +135,7 @@ namespace GymReceptionTool
             // txtSurname
             // 
             this.txtSurname.Location = new System.Drawing.Point(173, 65);
+            this.txtSurname.MaxLength = 20;
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(267, 20);
             this.txtSurname.TabIndex = 29;
