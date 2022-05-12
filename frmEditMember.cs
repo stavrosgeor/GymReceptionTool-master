@@ -81,7 +81,7 @@ namespace GymReceptionTool
             member.Gender = cmbGender.SelectedItem.ToString();
             member.UserRegistered = activedit.UserRegistered;
             member.Instructor = Instructors[listBox1.SelectedIndex].ID;
-            member.MembershipID =activedit.MembershipID;
+            member.MembershipID = activedit.MembershipID;
             db.UpdateMember(member);
 
             MessageBox.Show("Member Succesfully Updated!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -89,7 +89,7 @@ namespace GymReceptionTool
 
             this.Hide();
         }
-    
+
 
         private void rdbTel_CheckedChanged_1(object sender, EventArgs e)
         {
@@ -196,3 +196,4 @@ namespace GymReceptionTool
             return value.All(char.IsNumber);
         }
     }
+}
